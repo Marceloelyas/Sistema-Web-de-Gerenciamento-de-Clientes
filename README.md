@@ -43,7 +43,7 @@ web-designer-varago/
 ├── .gitignore                   # Arquivos ignorados pelo Git
 └── README.md                    # Documentação do projeto
 ```
-
+```
 Detalhamento dos Arquivos Principais
 Backend (Node.js/Express)
 Configuração Principal
@@ -141,4 +141,4 @@ Todas as rotas protegidas por JWT
 Controle de acesso por roles (user/admin)
 
 Proteção contra XSS/CSRF
-
+```
