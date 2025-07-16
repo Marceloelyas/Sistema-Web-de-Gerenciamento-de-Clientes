@@ -42,13 +42,16 @@ web-designer-varago/
 │   └── .env                     # Variáveis de ambiente
 ├── .gitignore                   # Arquivos ignorados pelo Git
 └── README.md                    # Documentação do projeto
-```
-```
-#Detalhamento dos Arquivos Principais
 
-#Backend (Node.js/Express)
+```
 
-## 1.Configuração Principal
+```markdown
+
+# **Detalhamento dos Arquivos Principais**
+
+# **Backend** (Node.js/Express)
+
+## **1.Configuração Principal**
 
      server/app.js: Configuração do Express e middlewares
 
@@ -56,7 +59,7 @@ web-designer-varago/
 
      server/config/db.js: Conexão com MongoDB
 
-## 2.Autenticação
+## **2.Autenticação**
 
      server/models/User.js: Modelo de usuário
 
@@ -66,7 +69,7 @@ web-designer-varago/
 
      server/routes/authRoutes.js: Rotas de autenticação
 
-## 3.Clientes
+## **3.Clientes**
 
      server/models/Client.js: Modelo de cliente
 
@@ -74,7 +77,7 @@ web-designer-varago/
 
      server/routes/clientRoutes.js: Rotas de clientes protegidas
 
-## 4.Documentos
+## **4.Documentos**
 
      server/models/Document.js: Modelo de documento
 
@@ -82,15 +85,16 @@ web-designer-varago/
 
      server/routes/documentRoutes.js: Rotas de documentos
 
-## 5.Utilitários
+## **5.Utilitários**
 
      server/utils/errorResponse.js: Formato padrão para erros
 
      server/middleware/async.js: Wrapper para async/await
 
 
-#Frontend
-## 1.Autenticação
+# **Frontend**
+
+## **1.Autenticação**
 
      client/login.html: Página de login
 
@@ -98,7 +102,7 @@ web-designer-varago/
 
      client/js/auth.js: Gerenciamento de autenticação
 
-## 2.Dashboard Principal
+## **2.Dashboard Principal**
 
      client/index.html: Página principal com dashboard
 
@@ -106,15 +110,15 @@ web-designer-varago/
 
      client/js/script.js: Lógica do dashboard e CRUD
 
-## 3.Gerenciamento de Documentos
+## **3.Gerenciamento de Documentos**
 
      client/client-details.html: Detalhes do cliente com documentos
 
      client/js/document-manager.js: Upload/download de arquivos
 
-#Fluxo do Sistema Atualizado
+# **Fluxo do Sistema Atualizado**
 
-## 1.Autenticação:
+## **1.Autenticação:**
 
      Usuário acessa /login.html
 
@@ -122,7 +126,7 @@ web-designer-varago/
 
      Redirecionado para /index.html (dashboard)
 
-## 2.Gerenciamento de Clientes:
+## **2.Gerenciamento de Clientes:**
 
      Dashboard mostra estatísticas e lista paginada
 
@@ -130,7 +134,7 @@ web-designer-varago/
 
      CRUD completo de clientes
 
-## 3.Documentos:
+## **3.Documentos:**
 
      Na página de detalhes do cliente
 
@@ -138,7 +142,7 @@ web-designer-varago/
 
      Download/exclusão de arquivos
 
-## 4.Segurança:
+## **4.Segurança:**
 
      Todas as rotas protegidas por JWT
 
