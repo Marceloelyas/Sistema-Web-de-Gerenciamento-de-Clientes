@@ -44,101 +44,105 @@ web-designer-varago/
 └── README.md                    # Documentação do projeto
 ```
 ```
-Detalhamento dos Arquivos Principais
-Backend (Node.js/Express)
-Configuração Principal
+#Detalhamento dos Arquivos Principais
 
-server/app.js: Configuração do Express e middlewares
+#Backend (Node.js/Express)
 
-server/server.js: Inicialização do servidor
+## 1.Configuração Principal
 
-server/config/db.js: Conexão com MongoDB
+     server/app.js: Configuração do Express e middlewares
 
-Autenticação
+     server/server.js: Inicialização do servidor
 
-server/models/User.js: Modelo de usuário
+     server/config/db.js: Conexão com MongoDB
 
-server/controllers/authController.js: Lógica de login/registro
+## 2.Autenticação
 
-server/middleware/auth.js: Middleware de proteção de rotas
+     server/models/User.js: Modelo de usuário
 
-server/routes/authRoutes.js: Rotas de autenticação
+     server/controllers/authController.js: Lógica de login/registro
 
-Clientes
+     server/middleware/auth.js: Middleware de proteção de rotas
 
-server/models/Client.js: Modelo de cliente
+     server/routes/authRoutes.js: Rotas de autenticação
 
-server/controllers/clientController.js: CRUD com paginação/filtros
+## 3.Clientes
 
-server/routes/clientRoutes.js: Rotas de clientes protegidas
+     server/models/Client.js: Modelo de cliente
 
-Documentos
+     server/controllers/clientController.js: CRUD com paginação/filtros
 
-server/models/Document.js: Modelo de documento
+     server/routes/clientRoutes.js: Rotas de clientes protegidas
 
-server/controllers/documentController.js: Upload/download de arquivos
+## 4.Documentos
 
-server/routes/documentRoutes.js: Rotas de documentos
+     server/models/Document.js: Modelo de documento
 
-Utilitários
+     server/controllers/documentController.js: Upload/download de arquivos
 
-server/utils/errorResponse.js: Formato padrão para erros
+     server/routes/documentRoutes.js: Rotas de documentos
 
-server/middleware/async.js: Wrapper para async/await
+## 5.Utilitários
 
-Frontend
-Autenticação
+     server/utils/errorResponse.js: Formato padrão para erros
 
-client/login.html: Página de login
+     server/middleware/async.js: Wrapper para async/await
 
-client/css/auth.css: Estilos da página de login
 
-client/js/auth.js: Gerenciamento de autenticação
+#Frontend
+## 1.Autenticação
 
-Dashboard Principal
+     client/login.html: Página de login
 
-client/index.html: Página principal com dashboard
+     client/css/auth.css: Estilos da página de login
 
-client/css/styles.css: Estilos principais
+     client/js/auth.js: Gerenciamento de autenticação
 
-client/js/script.js: Lógica do dashboard e CRUD
+## 2.Dashboard Principal
 
-Gerenciamento de Documentos
+     client/index.html: Página principal com dashboard
 
-client/client-details.html: Detalhes do cliente com documentos
+     client/css/styles.css: Estilos principais
 
-client/js/document-manager.js: Upload/download de arquivos
+     client/js/script.js: Lógica do dashboard e CRUD
 
-Fluxo do Sistema Atualizado
-Autenticação:
+## 3.Gerenciamento de Documentos
 
-Usuário acessa /login.html
+     client/client-details.html: Detalhes do cliente com documentos
 
-Faz login (autenticação JWT)
+     client/js/document-manager.js: Upload/download de arquivos
 
-Redirecionado para /index.html (dashboard)
+#Fluxo do Sistema Atualizado
 
-Gerenciamento de Clientes:
+## 1.Autenticação:
 
-Dashboard mostra estatísticas e lista paginada
+     Usuário acessa /login.html
 
-Filtros avançados por status/busca
+     Faz login (autenticação JWT)
 
-CRUD completo de clientes
+     Redirecionado para /index.html (dashboard)
 
-Documentos:
+## 2.Gerenciamento de Clientes:
 
-Na página de detalhes do cliente
+     Dashboard mostra estatísticas e lista paginada
 
-Upload de múltiplos documentos
+     Filtros avançados por status/busca
 
-Download/exclusão de arquivos
+     CRUD completo de clientes
 
-Segurança:
+## 3.Documentos:
 
-Todas as rotas protegidas por JWT
+     Na página de detalhes do cliente
 
-Controle de acesso por roles (user/admin)
+     Upload de múltiplos documentos
 
-Proteção contra XSS/CSRF
+     Download/exclusão de arquivos
+
+## 4.Segurança:
+
+     Todas as rotas protegidas por JWT
+
+     Controle de acesso por roles (user/admin)
+
+     Proteção contra XSS/CSRF
 ```
