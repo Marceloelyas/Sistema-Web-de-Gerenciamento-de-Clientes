@@ -43,3 +43,102 @@ web-designer-varago/
 ├── .gitignore                   # Arquivos ignorados pelo Git
 └── README.md                    # Documentação do projeto
 ```
+
+Detalhamento dos Arquivos Principais
+Backend (Node.js/Express)
+Configuração Principal
+
+server/app.js: Configuração do Express e middlewares
+
+server/server.js: Inicialização do servidor
+
+server/config/db.js: Conexão com MongoDB
+
+Autenticação
+
+server/models/User.js: Modelo de usuário
+
+server/controllers/authController.js: Lógica de login/registro
+
+server/middleware/auth.js: Middleware de proteção de rotas
+
+server/routes/authRoutes.js: Rotas de autenticação
+
+Clientes
+
+server/models/Client.js: Modelo de cliente
+
+server/controllers/clientController.js: CRUD com paginação/filtros
+
+server/routes/clientRoutes.js: Rotas de clientes protegidas
+
+Documentos
+
+server/models/Document.js: Modelo de documento
+
+server/controllers/documentController.js: Upload/download de arquivos
+
+server/routes/documentRoutes.js: Rotas de documentos
+
+Utilitários
+
+server/utils/errorResponse.js: Formato padrão para erros
+
+server/middleware/async.js: Wrapper para async/await
+
+Frontend
+Autenticação
+
+client/login.html: Página de login
+
+client/css/auth.css: Estilos da página de login
+
+client/js/auth.js: Gerenciamento de autenticação
+
+Dashboard Principal
+
+client/index.html: Página principal com dashboard
+
+client/css/styles.css: Estilos principais
+
+client/js/script.js: Lógica do dashboard e CRUD
+
+Gerenciamento de Documentos
+
+client/client-details.html: Detalhes do cliente com documentos
+
+client/js/document-manager.js: Upload/download de arquivos
+
+Fluxo do Sistema Atualizado
+Autenticação:
+
+Usuário acessa /login.html
+
+Faz login (autenticação JWT)
+
+Redirecionado para /index.html (dashboard)
+
+Gerenciamento de Clientes:
+
+Dashboard mostra estatísticas e lista paginada
+
+Filtros avançados por status/busca
+
+CRUD completo de clientes
+
+Documentos:
+
+Na página de detalhes do cliente
+
+Upload de múltiplos documentos
+
+Download/exclusão de arquivos
+
+Segurança:
+
+Todas as rotas protegidas por JWT
+
+Controle de acesso por roles (user/admin)
+
+Proteção contra XSS/CSRF
+
