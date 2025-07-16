@@ -1,5 +1,6 @@
 # Sistema-Web-de-Gerenciamento-de-Clientes
-'''markdown
+'''plaintext
+
 web-designer-varago/
 ├── client/                  # Frontend
 │   ├── css/
@@ -20,4 +21,5 @@ web-designer-varago/
 │   └── .env                 # Variáveis de ambiente
 ├── .gitignore               # Arquivos ignorados pelo Git
 └── README.md                # Documentação do projeto
+
 '''
